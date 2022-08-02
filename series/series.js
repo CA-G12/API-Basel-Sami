@@ -20,5 +20,5 @@ fetch = (url, callback) => {
 
 
 fetch('https://api.jikan.moe/v4/anime', (data) => {
-  console.log(data.data[0]);
+  console.log(data);
 });
