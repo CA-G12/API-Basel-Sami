@@ -8,7 +8,7 @@
 }
 
 :root {
-  --header-color: #37656F;
+  --header-color: #7C2A2A;
   --firs-linear: #00969E;
   --second-linear: #730000;
   --white: #ffffff;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, var(--second-linear) 0%, var(--firs-linear) 100%);
+  background: linear-gradient(180deg, var(--firs-linear) 0%, var(--second-linear) 100%);
   background-repeat: no-repeat;
   height: 100vh;
 }
