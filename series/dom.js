@@ -4,6 +4,7 @@ let fetch = (url, callback) => {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       let data = JSON.parse(xhr.responseText);
+      
       callback(data);
     }
   };
@@ -13,6 +14,7 @@ let fetch = (url, callback) => {
 };
 fetch("https://api.jikan.moe/v4/anime", (data) => {
   data = generateSeriesObj(data.data);
+  console.log(data)
   renderContainer(data);
 });
 
@@ -27,7 +29,7 @@ let renderNode = (node) => {
   card.classList.add()
   */
   //return card
-  console.log(node);
+ // console.log(node);
 };
 
 
