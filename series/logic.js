@@ -1,9 +1,4 @@
-fetch("https://api.jikan.moe/v4/anime", (data) => {
-  data = generateSeriesObj(data.data);
-  renderCard(data)
-  
-});
-function getGenres(obj) {
+let getGenres = (obj) => {
   let genres = [];
   if (obj.genres) {
     obj.genres.forEach((gen) => {
@@ -11,9 +6,9 @@ function getGenres(obj) {
     });
   }
   return genres;
-}
+};
 
-function generateSeriesObj(data) {
+let generateSeriesObj = (data) => {
   let newObj = [];
   for (let obj of data) {
     newObj.push({
@@ -30,23 +25,4 @@ function generateSeriesObj(data) {
     });
   }
   return newObj;
-}
-
-function renderCard(data) {
-  console.log(data);
-}
-
-function getTitle() {}
-
-function getDuration() {}
-
-function getBckground() {}
-
-function getYear() {}
-function getRank() {}
-
-function getEpisodesNo() {}
-
-function getTrailer() {}
-
-function detailesURL() {}
+};
