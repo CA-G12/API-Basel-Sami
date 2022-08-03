@@ -18,7 +18,6 @@
 body {
   background: linear-gradient(180deg, var(--firs-linear) 0%, var(--second-linear) 100%);
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 /* Header style starts */

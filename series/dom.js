@@ -29,7 +29,7 @@ fetch("https://api.jikan.moe/v4/anime", (data) => {
 });
 
 let renderContainer = (data) => {
-  const container = document.getElementById("container");
+  const container = document.querySelector(".container");
   data.forEach((ele) => {
     container.append(renderNode(ele));
     //console.log(ele)
@@ -37,6 +37,7 @@ let renderContainer = (data) => {
 };
 
 let renderNode = (node) => {
+  console.log(node)
   const card = document.createElement("div");
   card.classList.add("card");
   const face_front = document.createElement("div");
