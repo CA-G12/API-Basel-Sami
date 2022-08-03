@@ -1,7 +1,15 @@
 
 
 //title/rank/episodes/duration/background/img/year/url/trailer/
+let menuIcon = document.querySelector(`.fa-bars`);
 
+menuIcon.addEventListener(`click`, () => {
+  let ul = document.querySelector(`header nav ul`);
+  ul.style.left = 0;
+  ul.addEventListener(`click`, () => {
+    ul.style.left = `-100rem`;
+  })
+})
 
 fetch = (url, callback) => {
   let xhr = new XMLHttpRequest();
