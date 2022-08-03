@@ -1,6 +1,8 @@
 
 
-//title/rank/episodes/duration/background/img/year/url/trailer/
+//title/rank/episodes/duration/background/img/year/url/trailer/category
+
+
 
 
 fetch = (url, callback) => {
@@ -18,7 +20,3 @@ fetch = (url, callback) => {
   xhr.send();
 };
 
-
-fetch('https://api.jikan.moe/v4/anime', (data) => {
-  console.log(data);
-});
